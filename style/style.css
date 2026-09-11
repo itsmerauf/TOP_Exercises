@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+form fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: fit-content;
+}
+
+.blackSqr {
+    position: absolute;
+    left: 0;
+    top: 200px;
+    width: 30%;
+    height: 150px;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.odinLogo {
+    position: absolute;
+    left: 110px;
+    top: 210px;
+    width: 100px;
+    height: 130px;
+}
+
+.odinText {
+    position: absolute;
+    left: 220px;
+    top: 235px;
+    font-size: 80px;
+    color: white;
+    letter-spacing: 5px;
+}
+
+.backgroundImg {
+    width: 30%;
+    height: 98vh;
+    object-fit: cover;
+}
