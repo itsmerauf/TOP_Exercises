@@ -8,15 +8,19 @@
     <title>Odin Form</title>
 </head>
 <body>
-    <section class="imageSection">
-        <div class="blackSqr"></div>
+    <section class="container">
         <img class="backgroundImg" src="./style/images/alexas_fotos-leaf-10415416_1920.jpg" alt="Picture of a leaf">
+        <div class="blackSqr">
         <img class="odinLogo" src="./style/images/odin-lined.png" alt="The Odin Project Logo">
         <p class="odinText">ODIN</p>
-    </section>
-    
+        </div>
+    <div class="formContainer">
+        <p class="formText">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br>
+        Sign up <i>now</i> to get started. <br>
+    <br>You <i>know</i> you want to.</p>
     <form action="#" method="post">
-        <fieldset>
+        <fieldset class="fieldset">
+            <h1>Let's do this!</h1>
             <label for="firstName">FIRST NAME
                 <input type="text" name="firstName" id="firstName">
             </label>
@@ -41,6 +45,10 @@
                 <input type="password" name="passwordCheck" id="passwordCheck">
             </label>
         </fieldset>
+        <button class="Btn" type="button">Create Account</button>
+        <p class="confirmText">Already have an account? <a href="#">Sign in</a></p>
     </form>
+    </div>
+    </section>
 </body>
 </html>
