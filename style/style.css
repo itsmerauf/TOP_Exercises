@@ -64,13 +64,18 @@ h1 {
 input {
     display: flex;
     flex-wrap: wrap;
-    font-size: 1.5rem;
+    width: 20rem;
+    padding: 5px 10px 5px;
+    font-size: 20px;
     border-radius: 8px;
-    margin-top: 5px;
-    border: 1px solid #9999;
+    margin: 5px 0 10px;
+    border: 2px solid rgb(90, 100, 100, 0.2);
+    box-sizing: border-box;
+    outline: none;
 }
 
 label {
+    font-size: 14px;
     letter-spacing: 2px;
     font-weight: bold;
     
@@ -101,6 +106,7 @@ label {
     background: #684;
     color: white;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .button a:link,
@@ -108,5 +114,17 @@ label {
     color: #684;
     font-weight: bold;
     text-decoration: none;
-    
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+input:focus {
+    border-color: #6366f1;
+}
+
+input:required,
+input:invalid {
+    border-color: red;
 }
