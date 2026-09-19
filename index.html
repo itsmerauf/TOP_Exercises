@@ -3,54 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./script/script.js"></script>
     <link rel="stylesheet" href="./style/style.css">
     <title>Odin Form</title>
 </head>
 <body>
-    <section class="container">
-        <img class="backgroundImg" src="./style/images/alexas_fotos-leaf-10415416_1920.jpg" alt="Picture of a leaf">
-    <div class="blackSqr">
-        <img class="odinLogo" src="./style/images/odin-lined.png" alt="The Odin Project Logo">
-        <p class="odinText">ODIN</p>
+    <div class="container">
+        <div class="hero">
+            <img class="hero-img" src="./style/images/alexas_fotos-leaf-10415416_1920.jpg" alt="">
+            <div class="brand">
+                <img class="brand-logo" src="./style/images/odin-lined.png" alt="The Odin Project Logo">
+                <p class="brand-text">ODIN</p>
+            </div>
+        </div>
+
+        <div class="form-container">
+            <div class="form-intro">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+                <p>Sign up <i>now</i> to get started.</p>
+                <p>You <i>know</i> you want to.</p>
+            </div>
+
+            <form action="#" method="post">
+                <fieldset class="fieldset">
+                    <legend>Let's do this!</legend>
+
+                    <label for="firstName">FIRST NAME
+                        <input type="text" name="firstName" id="firstName" required>
+                    </label>
+
+                    <label for="lastName">LAST NAME
+                        <input type="text" name="lastName" id="lastName" required>
+                    </label>
+
+                    <label for="email">EMAIL
+                        <input type="email" name="email" id="email" required>
+                    </label>
+
+                    <label for="phoneNumber">PHONE NUMBER
+                        <input type="tel" name="phoneNumber" id="phoneNumber">
+                    </label>
+
+                    <label for="password">PASSWORD
+                        <input type="password" name="password" id="password" minlength="8" required>
+                    </label>
+
+                    <label for="passwordCheck">CONFIRM PASSWORD
+                        <input type="password" name="passwordCheck" id="passwordCheck" minlength="8" required>
+                    </label>
+                </fieldset>
+
+                <div class="form-actions">
+                    <button class="submit-btn" type="submit">Create Account</button>
+                    <p class="confirm-text">Already have an account? <a href="#">Log in</a></p>
+                </div>
+            </form>
+        </div>
     </div>
-    <div class="formContainer">
-        <p class="formText">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br>
-        Sign up <i>now</i> to get started. <br>
-        <br>You <i>know</i> you want to.</p>
-    <form action="#" method="post">
-        <fieldset class="fieldset">
-            <h1>Let's do this!</h1>
-            <label for="firstName">FIRST NAME
-                <input type="text" name="firstName" id="firstName">
-            </label>
-
-            <label for="lastName">LAST NAME
-                <input type="text" name="lastName" id="lastName">
-            </label>
-
-            <label for="email">EMAIL
-                <input type="email" name="email" id="email">
-            </label>
-
-            <label for="phoneNumber">PHONE NUMBER
-                <input type="text" name="phoneNumber" id="phoneNumber">
-            </label>
-
-            <label for="password">PASSWORD
-                <input type="password" name="password" id="password" minlength="8">
-            </label>
-
-            <label for="passwordCheck">CONFIRM PASSWORD
-                <input type="password" name="passwordCheck" id="passwordCheck">
-            </label>
-        </fieldset>
-    <div class="button">
-        <button class="Btn" type="button">Create Account</button>
-        <p class="confirmText">Already have an account? <a href="#">Log in</a></p>
-    </div>
-    </form>
-    </div>
-    </section>
 </body>
 </html>
